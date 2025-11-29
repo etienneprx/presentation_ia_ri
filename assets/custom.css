@@ -1,0 +1,211 @@
+/*-- scss:defaults --*/
+
+/*-- Palette de couleurs personnalisée --*/
+$backgroundColor: #ffffff;
+$mainColor: #2c3e50;
+$headingColor: #1a1a1a;
+$linkColor: #3498db;
+$linkColorHover: #2980b9;
+
+/*-- scss:rules --*/
+
+:root {
+  --r-background-color: #ffffff;
+  --r-main-font: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+  --r-main-font-size: 38px;
+  --r-main-color: #2c3e50;
+  --r-heading-font: 'Montserrat', 'Source Sans Pro', sans-serif;
+  --r-heading-color: #1a1a1a;
+  --r-heading-text-transform: none;
+  --r-heading-font-weight: 600;
+  --r-link-color: #3498db;
+  --r-link-color-hover: #2980b9;
+  --r-selection-background-color: #3498db;
+  --r-selection-color: #fff;
+}
+
+/*-- Titres de slides --*/
+.reveal h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-shadow: none;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.3em;
+}
+
+.reveal h3 {
+  font-size: 1.3em;
+  color: #34495e;
+}
+
+/*-- Slides de section avec fond coloré --*/
+.reveal section[data-background-color] h1,
+.reveal section[data-background-color] h2 {
+  color: #ffffff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+/*-- Listes --*/
+.reveal ul, .reveal ol {
+  margin: 0.5em 0 0.5em 1em;
+}
+
+.reveal ul li, .reveal ol li {
+  margin-bottom: 0.5em;
+}
+
+/*-- Listes incrémentales --*/
+.reveal .fragment {
+  transition: all 0.3s ease;
+}
+
+/*-- Code --*/
+.reveal pre {
+  margin: 1em auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.reveal code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background-color: #f8f8f8;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  color: #e74c3c;
+}
+
+.reveal pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+/*-- Emphase et texte important --*/
+.reveal em {
+  color: #2980b9;
+  font-style: italic;
+}
+
+.reveal strong {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+/*-- Notes et callouts --*/
+.reveal .callout {
+  background-color: #ecf0f1;
+  border-left: 5px solid #3498db;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.reveal .callout.warning {
+  border-left-color: #f39c12;
+  background-color: #fef5e7;
+}
+
+.reveal .callout.important {
+  border-left-color: #e74c3c;
+  background-color: #fadbd8;
+}
+
+/*-- Images --*/
+.reveal img {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/*-- Tableaux --*/
+.reveal table {
+  margin: 1em auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  padding: 0.5em 1em;
+}
+
+.reveal table td {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.reveal table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/*-- Footer personnalisé --*/
+.reveal .footer {
+  font-size: 0.6em;
+  color: #7f8c8d;
+}
+
+/*-- Classe utilitaire pour texte plus petit --*/
+.reveal .smaller {
+  font-size: 0.8em;
+}
+
+.reveal .smallest {
+  font-size: 0.6em;
+}
+
+/*-- Classe pour texte centré et agrandi --*/
+.reveal .r-fit-text {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/*-- Colonnes --*/
+.reveal .columns {
+  display: flex;
+  gap: 2em;
+}
+
+.reveal .column {
+  flex: 1;
+}
+
+/*-- Animation d'apparition plus douce --*/
+.reveal .slide-background {
+  transition: all 0.8s ease;
+}
+
+/*-- Style pour les citations --*/
+.reveal blockquote {
+  border-left: 5px solid #3498db;
+  padding-left: 1em;
+  font-style: italic;
+  color: #555;
+  background-color: #f8f9fa;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 0 5px 5px 0;
+}
+
+/*-- Numéros de slides stylisés --*/
+.reveal .slide-number {
+  background-color: rgba(52, 152, 219, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/*-- Logo --*/
+.reveal .slide-logo {
+  max-height: 100px !important;
+  height: 100px !important;
+}

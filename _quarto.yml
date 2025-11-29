@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "L'IA en Recherche"
+  navbar:
+    background: primary
+    left:
+      - text: "Présentation"
+        href: index.qmd
+
+format:
+  revealjs:
+    theme: [default, assets/custom.css]
+    slide-number: true
+    show-slide-number: all
+    hash-type: number
+    transition: slide
+    background-transition: fade
+    navigation-mode: linear
+    controls: true
+    progress: true
+    history: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    shuffle: false
+    fragments: true
+    embedded: false
+    help: true
+    show-notes: false
+    auto-slide: 0
+    auto-slide-stoppable: true
+    mouse-wheel: false
+    hide-inactive-cursor: true
+    hide-cursor-time: 3000
+    preview-links: false
+    transition-speed: default
+    fig-width: 8
+    fig-height: 6
+    fig-format: svg
+    fig-dpi: 300
+    chalkboard:
+      buttons: false
+    code-copy: true
+    code-line-numbers: false
+    code-overflow: wrap
+    highlight-style: github

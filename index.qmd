@@ -1,0 +1,207 @@
+---
+title: "L'Intelligence artificielle en recherche"
+subtitle: "Objet d'étude et outil méthodologique"
+author: "Étienne Proulx"
+institute: "Université Laval"
+date: today
+format:
+  revealjs:
+    logo: assets/images/logo.jpg
+    footer: "L'IA en recherche | 2025"
+    incremental: false
+---
+
+## Plan {.smaller}
+
+::: {.incremental}
+1. Introduction
+2. L'IA comme objet d'étude
+3. L'IA comme outil méthodologique
+4. Conclusion
+:::
+
+---
+
+# L'IA comme objet d'étude {background-color="#2c3e50"}
+
+## L'IA en sciences sociales (quelques exemples)
+
+::: {.columns}
+::: {.column width="50%"}
+**Administration publique et société**
+
+- Prise de décision automatisée
+- Risques et biais algorithmiques
+- Impact empirique des systèmes d'IA
+:::
+
+::: {.column width="50%"}
+**Relations internationales**
+
+- Robot tueurs et guerre autonome
+- Souveraineté numérique
+- Commerce international de l'IA
+- Compétition pour le marché de l'IA
+:::
+:::
+
+---
+
+## IA au Parlement européen
+
+::: {.columns}
+::: {.column width="40%"}
+**Question de recherche**
+
+L'optimisme ou le pessimisme face à l'IA est-il influencé par l'idéologie gauche-droite?
+:::
+
+::: {.column width="60%"}
+![](assets/images/ai_eu.png)
+:::
+:::
+
+---
+
+## Mon mémoire de maîtrise
+
+**Mesurer l'influence de l'industrie de l'IA**
+
+- Espace discursif à la Chambre des communes
+- Commissions parlementaires
+- Analyse de l'influence industrielle
+
+---
+
+## {background-image="assets/images/obvia.png" background-size="contain"}
+
+---
+
+# L'IA comme outil méthodologique {background-color="#16a085"}
+
+## Pourquoi l'IA en recherche?
+
+::: {.r-fit-text}
+**Analyser des données massives**
+:::
+
+- Textes (articles, discours, médias sociaux)
+- Images (photos de presse, publicités)
+- Données non structurées
+
+**Les possibilités sont vastes**
+
+---
+
+## Machine Learning
+
+::: {.columns}
+::: {.column width="50%"}
+**Approche traditionnelle**
+
+- Très technique
+- Expertise en programmation requise
+- Barrière d'entrée élevée
+:::
+
+::: {.column width="50%"}
+**Révolution LLM**
+
+- ChatGPT et modèles similaires
+- **Démocratisation** de l'IA
+- Accessible aux chercheurs en sciences sociales
+:::
+:::
+
+---
+
+## Data Enrichment avec LLM
+
+**Prompting the Machine** (Foisy, Proulx et al.)
+
+- Extraction de données structurées via API
+- Prompt engineering
+- Protocole standardisé et reproductible
+- Application: politiciens canadiens
+
+---
+
+## Analyse d'images avec LLM
+
+**Bordering Vulnerability** (Lajeunesse, Auchter, Dufresne)
+
+- Représentation médiatique des migrants climatiques
+- Analyse visuelle de médias québécois (2018-2023)
+- LLM pour analyser composition, éléments, symboles
+
+---
+
+## From Checkbox to Textbox
+
+::: {.columns}
+::: {.column width="50%"}
+![](assets/images/check_box.png)
+:::
+
+::: {.column width="50%"}
+![](assets/images/vote_strategic_by_party_pres.png)
+:::
+:::
+
+**Questions ouvertes vs fermées**
+
+- LLM transforme questions ouvertes en données analysables
+- Même validité que questions fermées
+- Capture la complexité authentique des attitudes
+
+---
+
+## LLM Tool
+
+**Plateforme tout-en-un pour chercheurs**
+
+::: {.incremental}
+- ❌ Pas de programmation requise
+- ✅ Interface interactive
+- ✅ 100% local (Ollama)
+- ✅ Multilingue (75+ langues)
+- ✅ Annoter → Entraîner → Analyser
+:::
+
+**Applications:** codage de réponses de sondages, analyse de sentiments, classification de textes
+
+---
+
+# Enjeux et perspectives {background-color="#8e44ad"}
+
+## Enjeux épistémologiques
+
+---
+
+## Enjeux éthiques
+
+---
+
+## Perspectives futures
+
+---
+
+# Conclusion {background-color="#1a1a1a"}
+
+## Synthèse
+
+---
+
+## Questions et discussion
+
+::: {.r-fit-text}
+Merci de votre attention
+:::
+
+---
+
+## Références
+
+::: {.references}
+<!-- Les références bibliographiques apparaîtront ici automatiquement -->
+:::
