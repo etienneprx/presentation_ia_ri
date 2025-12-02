@@ -49,17 +49,7 @@ format:
 
 ## IA au Parlement européen
 
-::: {.columns}
-::: {.column width="40%"}
-**Question de recherche**
-
-L'optimisme ou le pessimisme face à l'IA est-il influencé par l'idéologie gauche-droite?
-:::
-
-::: {.column width="60%"}
-![](assets/images/ai_eu.png)
-:::
-:::
+![](assets/images/ai_eu.png){fig-align="center"}
 
 ---
 
@@ -105,7 +95,7 @@ L'optimisme ou le pessimisme face à l'IA est-il influencé par l'idéologie gau
 :::
 
 ::: {.column width="50%"}
-**Révolution LLM**
+**Émergence des LLMs**
 
 - ChatGPT et modèles similaires
 - **Démocratisation** de l'IA
@@ -117,22 +107,38 @@ L'optimisme ou le pessimisme face à l'IA est-il influencé par l'idéologie gau
 
 ## Data Enrichment avec LLM
 
-**Prompting the Machine** (Foisy, Proulx et al.)
+::: {.columns}
+::: {.column width="50%"}
+**Prompting the Machine** [@foisy2025prompting]
 
 - Extraction de données structurées via API
 - Prompt engineering
 - Protocole standardisé et reproductible
 - Application: politiciens canadiens
+:::
+
+::: {.column width="50%"}
+![](assets/images/exemple_ia_data_enrichment.png)
+:::
+:::
 
 ---
 
 ## Analyse d'images avec LLM
 
-**Bordering Vulnerability** (Lajeunesse, Auchter, Dufresne)
+::: {.columns}
+::: {.column width="50%"}
+**Bordering Vulnerability** [@lajeunesse2025bordering]
 
 - Représentation médiatique des migrants climatiques
 - Analyse visuelle de médias québécois (2018-2023)
 - LLM pour analyser composition, éléments, symboles
+:::
+
+::: {.column width="50%"}
+![](assets/images/exemple_analyse_images.png)
+:::
+:::
 
 ---
 
@@ -144,51 +150,37 @@ L'optimisme ou le pessimisme face à l'IA est-il influencé par l'idéologie gau
 :::
 
 ::: {.column width="50%"}
-![](assets/images/vote_strategic_by_party_pres.png)
-:::
-:::
-
 **Questions ouvertes vs fermées**
 
 - LLM transforme questions ouvertes en données analysables
 - Même validité que questions fermées
 - Capture la complexité authentique des attitudes
+:::
+:::
+
+---
+
+## From Checkbox to Textbox
+
+![](assets/images/vote_strategic_by_party_pres.png){fig-align="center"}
 
 ---
 
 ## LLM Tool
 
+::: {.columns}
+::: {.column width="50%"}
 **Plateforme tout-en-un pour chercheurs**
-
-::: {.incremental}
-- ❌ Pas de programmation requise
-- ✅ Interface interactive
-- ✅ 100% local (Ollama)
-- ✅ Multilingue (75+ langues)
-- ✅ Annoter → Entraîner → Analyser
-:::
 
 **Applications:** codage de réponses de sondages, analyse de sentiments, classification de textes
 
----
+[@lemor2025llmtool]
+:::
 
-# Enjeux et perspectives {background-color="#8e44ad"}
-
-## Enjeux épistémologiques
-
----
-
-## Enjeux éthiques
-
----
-
-## Perspectives futures
-
----
-
-# Conclusion {background-color="#1a1a1a"}
-
-## Synthèse
+::: {.column width="50%"}
+![](assets/images/llm_tools.png)
+:::
+:::
 
 ---
 
@@ -203,5 +195,4 @@ Merci de votre attention
 ## Références
 
 ::: {.references}
-<!-- Les références bibliographiques apparaîtront ici automatiquement -->
 :::

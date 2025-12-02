@@ -10,9 +10,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="Étienne Proulx">
-  <meta name="dcterms.date" content="2025-12-02">
-  <title>L'IA en Recherche – L’Intelligence artificielle en recherche</title>
+  <title>L'IA en Recherche – gemini</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,27 +28,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -348,202 +326,61 @@
   <div class="reveal">
     <div class="slides">
 
-<section class="quarto-title-block center">
-  <h1 class="title">L’Intelligence artificielle en recherche</h1>
-  <p class="subtitle">Objet d’étude et outil méthodologique</p>
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Étienne Proulx 
-</div>
-        <p class="quarto-title-affiliation">
-            Université Laval
-          </p>
-    </div>
-</div>
-
-  <p class="date">2025-12-02</p>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Analysis of the Quarto Presentation Repository</h1>
+<p>This document provides an analysis of the current repository, which contains a Quarto presentation. The analysis covers the project structure, technologies used, and its suitability for deployment on GitHub Pages.</p>
 </section>
-<section class="slide level2 smaller center">
-<h2>Plan</h2>
-<div>
+<section class="slide level2 center">
+<h2>Project Overview</h2>
+<p>The repository hosts a Quatro presentation titled “L’Intelligence artificielle en recherche” by Étienne Proulx from Université Laval. The presentation explores the dual role of Artificial Intelligence in academic research: both as a subject of study and as a methodological tool.</p>
+<p>The content, as seen in <code>index.qmd</code>, is structured into several key sections: - <strong>Introduction:</strong> Outlines the presentation’s scope. - <strong>AI as an Object of Study:</strong> Provides examples of AI’s role in social sciences and international relations, including its discussion in the European Parliament and its influence on industry. - <strong>AI as a Methodological Tool:</strong> Discusses the use of AI for analyzing large datasets (text, images), the democratization of AI through Large Language Models (LLMs), and specific applications like data enrichment and image analysis. - <strong>Issues and Perspectives:</strong> Touches upon the epistemological and ethical challenges associated with AI. - <strong>Conclusion:</strong> Summarizes the key points and opens the floor for discussion.</p>
+</section>
+<section class="slide level2 center">
+<h2>File and Directory Structure</h2>
+<p>The repository is well-organized, adhering to standard practices for a Quarto project:</p>
+<ul>
+<li><code>_quarto.yml</code>: The main configuration file. It specifies the project type (<code>website</code>), output directory (<code>docs</code>), presentation title, and settings for the <code>revealjs</code> format.</li>
+<li><code>index.qmd</code>: The primary Quarto markdown file containing the presentation’s content and slide structure.</li>
+<li><code>assets/</code>: This directory contains all necessary assets for the presentation:
+<ul>
+<li><code>custom.css</code>: A stylesheet for custom theming.</li>
+<li><code>images/</code>: A folder for all the images used in the presentation.</li>
+</ul></li>
+<li><code>.gitignore</code>: This file is correctly configured to exclude files and directories that should not be committed to the repository, such as the Quarto cache (<code>/.quarto/</code>), IDE-specific files, and OS-generated files.</li>
+<li><code>docs/</code>: This directory contains the rendered HTML output of the presentation. This is the directory that will be served by GitHub Pages.</li>
+<li><code>.nojekyll</code>: The presence of this file in both the root and <code>docs/</code> directories is crucial. It instructs GitHub Pages to bypass the Jekyll static site generator, ensuring that the Quarto-generated site is served as-is.</li>
+</ul>
+</section>
+<section class="slide level2 center">
+<h2>Technologies Used</h2>
+<ul>
+<li><strong>Quarto:</strong> The core technology used for creating the presentation. Quarto is a modern, open-source scientific and technical publishing system.</li>
+<li><strong>reveal.js:</strong> The presentation is formatted for <code>reveal.js</code>, a popular HTML presentation framework. This is configured in <code>_quarto.yml</code>.</li>
+<li><strong>HTML/CSS:</strong> The output is a standard HTML/CSS/JavaScript website, making it highly portable and easy to host.</li>
+<li><strong>Git/GitHub:</strong> The project is version-controlled with Git and is intended to be hosted on GitHub.</li>
+</ul>
+</section>
+<section class="slide level2 center">
+<h2>GitHub Pages Deployment</h2>
+<p>The repository is perfectly set up for deployment on GitHub Pages. Here’s why:</p>
 <ol type="1">
-<li class="fragment">Introduction</li>
-<li class="fragment">L’IA comme objet d’étude</li>
-<li class="fragment">L’IA comme outil méthodologique</li>
-<li class="fragment">Conclusion</li>
+<li><strong>Output Directory:</strong> The <code>_quarto.yml</code> file specifies <code>output-dir: docs</code>. This means that when the project is rendered, the output is saved to the <code>docs/</code> directory.</li>
+<li><strong>GitHub Pages Configuration:</strong> GitHub Pages can be configured to serve a website from the <code>docs/</code> directory on the <code>main</code> branch.</li>
+<li><strong><code>.nojekyll</code> file:</strong> The presence of the <code>.nojekyll</code> file ensures that GitHub Pages will not attempt to build the site with Jekyll, which is the correct behavior for a pre-built Quarto site.</li>
 </ol>
-</div>
+<p>To deploy this presentation on GitHub Pages, the user would need to: 1. Push the repository to GitHub. 2. In the repository’s settings, under the “Pages” section, select the <code>main</code> branch as the source and <code>/docs</code> as the folder.</p>
 </section>
 <section class="slide level2 center">
-
-</section>
-<section>
-<section class="title-slide slide level1 center" data-background-color="#2c3e50">
-<h1>L’IA comme objet d’étude</h1>
-
-</section>
-<section class="slide level2 center">
-<h2>L’IA en sciences sociales (quelques exemples)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Administration publique et société</strong></p>
-<ul>
-<li>Prise de décision automatisée</li>
-<li>Risques et biais algorithmiques</li>
-<li>Impact empirique des systèmes d’IA</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Relations internationales</strong></p>
-<ul>
-<li>Robot tueurs et guerre autonome</li>
-<li>Souveraineté numérique</li>
-<li>Commerce international de l’IA</li>
-<li>Compétition pour le marché de l’IA</li>
-</ul>
-</div></div>
-</section>
-<section class="slide level2 center">
-<h2>IA au Parlement européen</h2>
-
-<img data-src="assets/images/ai_eu.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section class="slide level2 center">
-<h2>Mon mémoire de maîtrise</h2>
-<p><strong>Mesurer l’influence de l’industrie de l’IA</strong></p>
-<ul>
-<li>Espace discursif à la Chambre des communes</li>
-<li>Commissions parlementaires</li>
-<li>Analyse de l’influence industrielle</li>
-</ul>
-</section>
-<section class="slide level2 center" data-background-image="assets/images/obvia.png" data-background-size="contain">
-<h2></h2>
-</section>
-<section class="slide level2 center">
-
-</section></section>
-<section>
-<section class="title-slide slide level1 center" data-background-color="#16a085">
-<h1>L’IA comme outil méthodologique</h1>
-
-</section>
-<section class="slide level2 center">
-<h2>Pourquoi l’IA en recherche?</h2>
-<div class="r-fit-text">
-<p><strong>Analyser des données massives</strong></p>
-</div>
-<ul>
-<li>Textes (articles, discours, médias sociaux)</li>
-<li>Images (photos de presse, publicités)</li>
-<li>Données non structurées</li>
-</ul>
-<p><strong>Les possibilités sont vastes</strong></p>
-</section>
-<section class="slide level2 center">
-<h2>Machine Learning</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Approche traditionnelle</strong></p>
-<ul>
-<li>Très technique</li>
-<li>Expertise en programmation requise</li>
-<li>Barrière d’entrée élevée</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Émergence des LLMs</strong></p>
-<ul>
-<li>ChatGPT et modèles similaires</li>
-<li><strong>Démocratisation</strong> de l’IA</li>
-<li>Accessible aux chercheurs en sciences sociales</li>
-</ul>
-</div></div>
-</section>
-<section class="slide level2 center">
-<h2>Data Enrichment avec LLM</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Prompting the Machine</strong> <span class="citation" data-cites="foisy2025prompting">(<a href="#/references" role="doc-biblioref" onclick="">Foisy et al. 2025</a>)</span></p>
-<ul>
-<li>Extraction de données structurées via API</li>
-<li>Prompt engineering</li>
-<li>Protocole standardisé et reproductible</li>
-<li>Application: politiciens canadiens</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="assets/images/exemple_ia_data_enrichment.png"></p>
-</div></div>
-</section>
-<section class="slide level2 center">
-<h2>Analyse d’images avec LLM</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Bordering Vulnerability</strong> <span class="citation" data-cites="lajeunesse2025bordering">(<a href="#/references" role="doc-biblioref" onclick="">Lajeunesse, Auchter, and Dufresne 2025</a>)</span></p>
-<ul>
-<li>Représentation médiatique des migrants climatiques</li>
-<li>Analyse visuelle de médias québécois (2018-2023)</li>
-<li>LLM pour analyser composition, éléments, symboles</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="assets/images/exemple_analyse_images.png"></p>
-</div></div>
-</section>
-<section class="slide level2 center">
-<h2>From Checkbox to Textbox</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="assets/images/check_box.png"></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Questions ouvertes vs fermées</strong></p>
-<ul>
-<li>LLM transforme questions ouvertes en données analysables</li>
-<li>Même validité que questions fermées</li>
-<li>Capture la complexité authentique des attitudes</li>
-</ul>
-</div></div>
-</section>
-<section class="slide level2 center">
-<h2>From Checkbox to Textbox</h2>
-
-<img data-src="assets/images/vote_strategic_by_party_pres.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section class="slide level2 center">
-<h2>LLM Tool</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Plateforme tout-en-un pour chercheurs</strong></p>
-<p><strong>Applications:</strong> codage de réponses de sondages, analyse de sentiments, classification de textes</p>
-<p><span class="citation" data-cites="lemor2025llmtool">(<a href="#/references" role="doc-biblioref" onclick="">Lemor, Dinan, and Gilbert 2025</a>)</span></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="assets/images/llm_tools.png"></p>
-</div></div>
-</section>
-<section class="slide level2 center">
-<h2>Questions et discussion</h2>
-<div class="r-fit-text">
-<p>Merci de votre attention</p>
-</div>
-</section>
-<section class="slide level2 smaller scrollable" id="references">
-<h2>Références</h2>
-<div class="references">
-
-</div>
+<h2>Conclusion and Recommendations</h2>
+<p>The repository is well-structured and follows best practices for a Quarto project designed for GitHub Pages. The analysis shows that the project is self-contained and ready for deployment.</p>
+<p><strong>Recommendations:</strong> - No major changes are needed for the project to work on GitHub Pages. - The user should ensure that the GitHub repository is made public (if not already) and that GitHub Pages is enabled in the repository settings, pointing to the <code>docs</code> folder.</p>
+<p>This analysis concludes that the project is in an excellent state for its intended purpose.</p>
 
 <div class="quarto-auto-generated-content">
-<p><img src="assets/images/logo.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>L’IA en recherche | 2025</p>
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-foisy2025prompting" class="csl-entry" role="listitem">
-Foisy, Laurence-Olivier M, Étienne Proulx, Hubert Cadieux, Jérémy Gilbert, Jozef Rivest, Alexandre Bouillon, and Yannick Dufresne. 2025. <span>“Prompting the Machine: Introducing an LLM Data Extraction Method for Social Scientists.”</span> <em>Social Science Computer Review</em>, 08944393251344865.
-</div>
-<div id="ref-lajeunesse2025bordering" class="csl-entry" role="listitem">
-Lajeunesse, Sarah, Jessica Auchter, and Yannick Dufresne. 2025. <span>“Bordering Vulnerability: Media Portrayal of Climate Migrants in Quebec’s Visual Narrative.”</span> <em>Howard Journal of Communications</em>, 1–18.
-</div>
-<div id="ref-lemor2025llmtool" class="csl-entry" role="listitem">
-Lemor, Antoine, Shannon Dinan, and Jérémy Gilbert. 2025. <span>“LLM Tool: A Hybrid Pipeline for Automated Large-Scale Text Annotation Using Local Language Models and BERT Classifiers.”</span> <a href="https://github.com/antoinelemor/LLM_Tool">https://github.com/antoinelemor/LLM_Tool</a>.
+
 </div>
 </div>
 </section></section>
