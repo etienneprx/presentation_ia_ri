@@ -24,7 +24,7 @@ format:
 
 ---
 
-## L'IA en sciences sociales (quelques exemples)
+## L'IA en sciences sociales
 
 ::: {.columns}
 ::: {.column width="50%"}
