@@ -20,9 +20,9 @@ format:
 4. Conclusion
 :::
 
----
-
 # L'IA comme objet d'étude {background-color="#2c3e50"}
+
+---
 
 ## L'IA en sciences sociales (quelques exemples)
 
@@ -64,8 +64,6 @@ format:
 ---
 
 ## {background-image="assets/images/obvia.png" background-size="contain"}
-
----
 
 # L'IA comme outil méthodologique {background-color="#16a085"}
 
